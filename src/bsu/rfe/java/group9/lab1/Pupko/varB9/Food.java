@@ -42,5 +42,5 @@ public void setNumb(Double numb){
         this.name = name;
     }
 
-.
+
 }
