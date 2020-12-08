@@ -4,11 +4,11 @@ public abstract class Food implements Consumable, Nutritious {
 
     String name = null;
     String size= null;
-    Double number=null;
+    String number=null;
     public String getSize() {
         return size;
     }
-    public Double getNumb() {
+    public String getNumb() {
         return number;
     }
 

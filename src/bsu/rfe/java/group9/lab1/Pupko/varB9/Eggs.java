@@ -7,7 +7,10 @@ private String number;
 this.number=number;
 
     }
-public void getNumb(String number){
+    public String getNumb() {
+        return number;
+    }
+    public void setNumb(String number){
         this.number=number;
 }
 
@@ -32,4 +35,5 @@ public void getNumb(String number){
             return number.equals(((Apple)arg0).number);
         } else
             return false;
-    }}
+    }
+}

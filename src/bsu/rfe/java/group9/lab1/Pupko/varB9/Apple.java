@@ -6,10 +6,6 @@ public class Apple extends Food implements Consumable{
         super("яблоко");
         this.size=size;
     }
-
-
-
-
     public String getSize() {
         return size;
     }
