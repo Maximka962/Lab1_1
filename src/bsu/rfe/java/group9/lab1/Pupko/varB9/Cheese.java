@@ -18,4 +18,3 @@ public class Cheese extends Food implements Consumable {
     }
 
 }
-.
