@@ -13,7 +13,7 @@ public class Cheese extends Food implements Consumable {
         System.out.println( this + " съеден");
 
     }
-    public int calculateCalories() {
+    public int calculateCalorie() {
         return 300;
     }
 
