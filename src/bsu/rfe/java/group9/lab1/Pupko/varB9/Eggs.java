@@ -1,5 +1,5 @@
 package bsu.rfe.java.group9.lab1.Pupko.varB9;
-import java.lang.String;
+
 public class Eggs extends Food implements Consumable {
 private String number;
     public Eggs(String number) {
@@ -19,7 +19,7 @@ public void getNumb(String number){
         if (this.number.equals("одно")) {
 
             return 30; }
-        else if (this.size.equals("два")) {
+        else if (this.number.equals("два")) {
 
             return 60; }
         else
