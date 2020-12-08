@@ -12,17 +12,22 @@ public class MainApplication {
         int twoEggs=0;
         int threeEggs=0;
         int calories=-1;
-
+        boolean sort = false;
         Food [] breakfast = new Food [20];
         int ItemsSoFar=0;
+
         for (String arg: args) {
+            String[] parts = arg.split("/");
             if(arg.startsWith("-")) {
                 if (arg.equals("-calories")) {
                     calories=0;
+                }else if(parts[0].equals("-sort")) {
+                    System.out.println("Sorted breakfast:");
+                    sort = true;
                 }
 
             }
-            String[] parts = arg.split("/");
+
             if (parts[0].equals("Cheese")) {
                 breakfast[ItemsSoFar] = new Cheese(); i1++;}
             else
@@ -60,12 +65,26 @@ public class MainApplication {
                 item.consume();
                 if(calories>=0) {
                     calories+=item.calculateCalories();
+                    item.consume();
                 }
             }
             else
                 continue;
         }
+        calories--;
+        System.out.println("Number of apples with size: "+"big - "+bigApple+"; small - "+smallApple);
+        System.out.println("Number of cheese: "+i1);
+       if(singleEgg==1)
+           System.out.println("One egg");
+       else if(twoEggs==1)
+           System.out.println("Two eggs");
+       else if(threeEggs==1)
+           System.out.println("Three eggs");
 
+        if(calories > 0)
+            System.out.println("breakfast calories:"+ calories );
+
+        System.out.println(" Have a nice day!");
     }
 
 
