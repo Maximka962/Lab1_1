@@ -6,6 +6,7 @@ public class MainApplication {
         int i1=0;
         int i2=0;
         int i3=0;
+        int i4=0;
         int smallApple=0;
         int bigApple=0;;
         int singleEgg=0;
@@ -65,7 +66,7 @@ public class MainApplication {
                 item.consume();
                 if(calories>=0) {
                     calories+=item.calculateCalories();
-                    item.consume();
+                   
                 }
             }
             else
@@ -75,11 +76,14 @@ public class MainApplication {
         System.out.println("Number of apples with size: "+"big - "+bigApple+"; small - "+smallApple);
         System.out.println("Number of cheese: "+i1);
        if(singleEgg==1)
-           System.out.println("One egg");
-       else if((twoEggs==1)||(singleEgg==2))
-           System.out.println("Two eggs");
-       else if((threeEggs==1)||((singleEgg==1)&&(twoEggs==1))||(singleEgg==3))
-           System.out.println("Three eggs");
+           i4++;
+
+        if((twoEggs==1))
+           i4+=2;
+
+        if((threeEggs==1))
+           i4+=3;
+       System.out.println("Number of Eggs: "+i4);
 
         if(calories > 0)
             System.out.println("breakfast calories:"+ calories );

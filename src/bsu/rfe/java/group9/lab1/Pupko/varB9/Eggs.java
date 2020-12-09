@@ -3,7 +3,7 @@ package bsu.rfe.java.group9.lab1.Pupko.varB9;
 public class Eggs extends Food implements Consumable {
 private String number;
     public Eggs(String number) {
-        super("Яйца");
+        super("яйца");
 this.number=number;
 
     }
@@ -15,14 +15,14 @@ this.number=number;
 }
 
     public void consume() {
-        System.out.println( this + " съеден");
+        System.out.println(number+ " "+ this+ " съедено");
 
     }
     public int calculateCalories() {
-        if (this.number.equals("одно")) {
+        if (this.number.equals("Одно")) {
 
             return 30; }
-        else if (this.number.equals("два")) {
+        else if (this.number.equals("Два")) {
 
             return 60; }
         else
