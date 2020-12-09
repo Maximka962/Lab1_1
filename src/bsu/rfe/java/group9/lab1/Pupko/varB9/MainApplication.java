@@ -76,9 +76,9 @@ public class MainApplication {
         System.out.println("Number of cheese: "+i1);
        if(singleEgg==1)
            System.out.println("One egg");
-       else if(twoEggs==1)
+       else if((twoEggs==1)||(singleEgg==2))
            System.out.println("Two eggs");
-       else if(threeEggs==1)
+       else if((threeEggs==1)||((singleEgg==1)&&(twoEggs==1))||(singleEgg==3))
            System.out.println("Three eggs");
 
         if(calories > 0)
